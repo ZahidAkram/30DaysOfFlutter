@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CatalogModel{
-  static List<Item> items=[
-    Item(
-        id: 160562,
-        name: "Iphone 12 Pro",
-        desc: "Apple Iphone 12 Pro Max.",
-        price: 999,
-        color: "#33505a",
-        image:"https://www.gizmochina.com/wp-content/uploads/2020/05/iphone-12-pro-max-family-hero-all-600x600.jpg"
-    )
-  ];
+  static List<Item> items=[];
 }
 class Item{
   final int id;

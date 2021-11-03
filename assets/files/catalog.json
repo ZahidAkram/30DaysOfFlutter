@@ -2,7 +2,47 @@
   "products": [
     {
       "id": 160562,
-      "name": "Iphone 12 Pro",
+      "name": "Iphone 12 Pro Max",
+      "desc": "Apple Iphone 12 Pro Max 12th Generation.",
+      "price": 999,
+      "color": "#33505a",
+      "image":"https://www.gizmochina.com/wp-content/uploads/2020/05/iphone-12-pro-max-family-hero-all-600x600.jpg"
+    },
+    {
+      "id": 160563,
+      "name": "Pixel 5",
+      "desc": "Google pixel 5th Generation.",
+      "price": 900,
+      "color": "#33505a",
+      "image":"https://www.techrepublic.com/a/hub/i/r/2020/09/30/36a8327b-d133-4c74-a742-c481e69bf979/resize/1200x/cb40fe0120ae8203c66026101a75b915/google-pixel-5.jpg"
+    },
+    {
+      "id": 160564,
+      "name": "M1 Macbook Air",
+      "desc": "Apple Macbook Air Silicon.",
+      "price": 1099,
+      "color": "#33505a",
+      "image":"https://cdn.dribbble.com/users/31847/screenshots/637363/mbp.png"
+    },
+    {
+      "id": 160565,
+      "name": "Ipad Pro",
+      "desc": "Apple Ipad Pro 2020 edition.",
+      "price": 1000,
+      "color": "#33505a",
+      "image":"https://media.ldlc.com/r1600/ld/products/00/05/82/55/LD0005825572_1.jpg"
+    },
+    {
+      "id": 160566,
+      "name": "Galaxy S21",
+      "desc": "Samsung Galaxy S21 8th Generation.",
+      "price": 899,
+      "color": "#33505a",
+      "image":"https://www.mytrendyphone.eu/images/Samsung-Galaxy-S21-5G-128GB-Phantom-Grey-8806090892776-18012021-01-p.jpg"
+    },
+    {
+      "id": 160562,
+      "name": "Iphone 12 Pro Max",
       "desc": "Apple Iphone 12 Pro Max 12th Generation.",
       "price": 999,
       "color": "#33505a",
