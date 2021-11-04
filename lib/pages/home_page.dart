@@ -1,4 +1,5 @@
 import 'package:firstproject/models/catalog.dart';
+import 'package:firstproject/utils/routes.dart';
 import 'package:firstproject/widgets/home_widgets/catalog_header.dart';
 import 'package:firstproject/widgets/home_widgets/catalog_list.dart';
 import 'dart:convert';
@@ -42,8 +43,12 @@ final String name="Islamabad";
   Widget build(BuildContext context) {
 
     return Scaffold(
-
       backgroundColor: MyTheme.creamColor,
+      floatingActionButton: FloatingActionButton(
+        onPressed: ()=>Navigator.pushNamed(context, MyRoutes.cartRoute),
+        backgroundColor: MyTheme.darkBlueishColor,
+        child: const Icon(CupertinoIcons.cart),
+      ),
       body: SafeArea(
         child: Container(
           padding: Vx.m32,

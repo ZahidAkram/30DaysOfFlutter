@@ -1,3 +1,4 @@
+import 'package:firstproject/pages/cart_page.dart';
 import 'package:firstproject/pages/login_page.dart';
 import 'package:firstproject/utils/routes.dart';
 import 'package:firstproject/widgets/themes.dart';
@@ -23,7 +24,8 @@ import 'package:google_fonts/google_fonts.dart';
        routes: {
        "/" : (context) => LoginPage(),
          MyRoutes.homeRoute: (context)=> HomePage(),
-         MyRoutes.loginRoute:(context)=> LoginPage()
+         MyRoutes.loginRoute:(context)=> LoginPage(),
+         MyRoutes.cartRoute:(context)=> CartPage()
        },
      );
 
