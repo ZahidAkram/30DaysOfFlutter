@@ -1,8 +1,8 @@
-import 'package:firstproject/login_page.dart';
+import 'package:firstproject/pages/login_page.dart';
 import 'package:firstproject/utils/routes.dart';
 import 'package:firstproject/widgets/themes.dart';
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'pages/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
  void main()
  {
