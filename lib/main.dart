@@ -20,7 +20,7 @@ import 'package:google_fonts/google_fonts.dart';
 
         debugShowCheckedModeBanner: false, //debug ka banner hatany ka code
 
-        initialRoute:MyRoutes.loginRoute,
+        initialRoute:MyRoutes.homeRoute,
        routes: {
        "/" : (context) => LoginPage(),
          MyRoutes.homeRoute: (context)=> HomePage(),
