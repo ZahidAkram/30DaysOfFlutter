@@ -31,7 +31,7 @@ final String name="Islamabad";
     loadData();
   }
   loadData() async {
-            await Future.delayed(const Duration(seconds: 10));
+            await Future.delayed(const Duration(seconds: 5));
             final catalogJson = await rootBundle.loadString("assets/files/catalog.json");
             final decodeData= jsonDecode(catalogJson);
             var productData = decodeData["products"];
@@ -43,11 +43,11 @@ final String name="Islamabad";
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       floatingActionButton: FloatingActionButton(
         onPressed: ()=>Navigator.pushNamed(context, MyRoutes.cartRoute),
-        backgroundColor: MyTheme.darkBlueishColor,
-        child: const Icon(CupertinoIcons.cart),
+        backgroundColor: context.theme.buttonColor,
+        child: const Icon(CupertinoIcons.cart, color: Colors.white,),
       ),
       body: SafeArea(
         child: Container(

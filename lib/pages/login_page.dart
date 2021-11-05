@@ -1,6 +1,7 @@
 import 'package:firstproject/utils/routes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:velocity_x/velocity_x.dart';
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -27,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: context.canvasColor,
       child: SingleChildScrollView(
         child: Column(
           children: [
@@ -39,12 +40,12 @@ class _LoginPageState extends State<LoginPage> {
 
             ),
             Text( "Welcome $name",
-              style: TextStyle(
+              style: const TextStyle(
               fontSize: 25,
                 fontWeight:  FontWeight.bold,
             ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
           Padding(
@@ -53,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
               key: _formkey,
               child: Column(children: [
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText:"Enter Username",
                     labelText: "Username",
                   ),
@@ -73,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
 
                 TextFormField(
                   obscureText: true,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText:"Enter password",
                     labelText: "Password",
                   ),
@@ -87,23 +88,23 @@ class _LoginPageState extends State<LoginPage> {
                     return null;
                   },
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                Material(
-                 color: Colors.deepPurple,
+                 color: context.theme.buttonColor,
                  borderRadius: BorderRadius.circular(onchangeButton?50:8),
                  child: InkWell(
 
                    onTap: () => moveToHome(context),
                    child: AnimatedContainer(
-                     duration: Duration(seconds: 1),
+                     duration: const Duration(seconds: 1),
                      height: 50,
                      width: onchangeButton?50:150,
 
                      alignment: Alignment.center,
-                     child:onchangeButton?Icon(Icons.done,
-                     color: Colors.white,):Text(
+                     child:onchangeButton?const Icon(Icons.done,
+                     color: Colors.white,):const Text(
                        "Login",
                        style:
                        TextStyle(

@@ -14,13 +14,13 @@ import 'package:google_fonts/google_fonts.dart';
    @override
    Widget build(BuildContext context) {
      return MaterialApp(
-       themeMode: ThemeMode.light,
+       themeMode: ThemeMode.system,
        theme: MyTheme.lightTheme,
        darkTheme: MyTheme.darkTheme,
 
         debugShowCheckedModeBanner: false, //debug ka banner hatany ka code
 
-        initialRoute:MyRoutes.homeRoute,
+        initialRoute:MyRoutes.loginRoute,
        routes: {
        "/" : (context) => LoginPage(),
          MyRoutes.homeRoute: (context)=> HomePage(),
